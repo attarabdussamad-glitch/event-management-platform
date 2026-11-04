@@ -44,13 +44,25 @@ export default async function HomePage() {
       <section className="relative bg-slate-900 text-white overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-500/20 via-transparent to-transparent" />
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-24 md:py-32 relative">
-          <p className="text-amber-400 font-medium tracking-wide text-sm uppercase mb-4">Mumbai · Career & Recruitment Fair</p>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight max-w-3xl text-balance leading-tight">{name}</h1>
-          <p className="mt-6 text-xl md:text-2xl text-slate-300 max-w-2xl">{tagline}</p>
-          <p className="mt-4 text-slate-400 max-w-xl">{location}</p>
+          <p className="text-amber-400 font-medium tracking-wide text-sm uppercase mb-4">
+            Mumbai · Career & Recruitment Fair
+          </p>
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight max-w-3xl text-balance leading-tight">
+            {name}
+          </h1>
+          <p className="mt-6 text-xl md:text-2xl text-slate-300 max-w-2xl">
+            {tagline}
+          </p>
+          <p className="mt-4 text-slate-400 max-w-xl">
+            {location}
+          </p>
           <div className="mt-10 flex flex-wrap gap-4">
-            <Link href="/register" className="inline-flex items-center justify-center bg-amber-500 text-slate-900 font-semibold px-6 py-3 rounded-md hover:bg-amber-400 transition">Register as Job Seeker</Link>
-            <Link href="/register?type=employer" className="inline-flex items-center justify-center border border-slate-600 text-white font-medium px-6 py-3 rounded-md hover:bg-slate-800 transition">Employer / Recruiter</Link>
+            <Link href="/register" className="inline-flex items-center justify-center bg-amber-500 text-slate-900 font-semibold px-6 py-3 rounded-md hover:bg-amber-400 transition">
+              Register as Job Seeker
+            </Link>
+            <Link href="/register?type=employer" className="inline-flex items-center justify-center border border-slate-600 text-white font-medium px-6 py-3 rounded-md hover:bg-slate-800 transition">
+              Employer / Recruiter
+            </Link>
           </div>
         </div>
       </section>
@@ -58,9 +70,15 @@ export default async function HomePage() {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900">Connecting Talent with Opportunity</h2>
-            <p className="mt-4 text-slate-600 leading-relaxed">{description}</p>
-            <Link href="/about" className="inline-block mt-6 text-amber-600 font-medium hover:text-amber-700">Learn more about the event →</Link>
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900">
+              Connecting Talent with Opportunity
+            </h2>
+            <p className="mt-4 text-slate-600 leading-relaxed">
+              {description}
+            </p>
+            <Link href="/about" className="inline-block mt-6 text-amber-600 font-medium hover:text-amber-700">
+              Learn more about the event →
+            </Link>
           </div>
           <div className="grid grid-cols-2 gap-4">
             {[
@@ -80,9 +98,15 @@ export default async function HomePage() {
 
       <section className="bg-slate-50 border-y border-slate-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-slate-900">Ready to take the next step in your career?</h2>
-          <p className="mt-3 text-slate-600 max-w-xl mx-auto">Register now to receive your unique QR ticket and stay updated with participating employers and session schedules.</p>
-          <Link href="/register" className="inline-flex mt-8 bg-slate-900 text-white font-semibold px-8 py-3 rounded-md hover:bg-slate-800 transition">Complete Registration</Link>
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900">
+            Ready to take the next step in your career?
+          </h2>
+          <p className="mt-3 text-slate-600 max-w-xl mx-auto">
+            Register now to receive your unique QR ticket and stay updated with participating employers and session schedules.
+          </p>
+          <Link href="/register" className="inline-flex mt-8 bg-slate-900 text-white font-semibold px-8 py-3 rounded-md hover:bg-slate-800 transition">
+            Complete Registration
+          </Link>
         </div>
       </section>
 
