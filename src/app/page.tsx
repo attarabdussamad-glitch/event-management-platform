@@ -88,8 +88,12 @@ export default async function HomePage() {
               { label: "Networking", value: "Industry Leaders" },
             ].map((item) => (
               <div key={item.label} className="border border-slate-200 rounded-lg p-5 bg-slate-50">
-                <div className="text-sm text-slate-500">{item.label}</div>
-                <div className="mt-1 font-semibold text-slate-900">{item.value}</div>
+                <div className="text-sm text-slate-500">
+                  {item.label}
+                </div>
+                <div className="mt-1 font-semibold text-slate-900">
+                  {item.value}
+                </div>
               </div>
             ))}
           </div>
